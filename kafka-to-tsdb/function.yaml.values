@@ -9,24 +9,24 @@ initialOffset:
 
 workerAllocatorName:
   displayName: Worker allocator name
-  kind: input
+  kind: string
   description: "Kafka worker allocator name"
   required: false
 
 consumerGroup:
   displayName: Consumer Group
-  kind: input
+  kind: string
   description: "Kafka consumer group name"
   required: false
 
 topic:
   displayName: Topic
-  kind: input
+  kind: string
   description: "Kafka topic name"
   required: true
 
 broker:
   displayName: Broker
-  kind: input
+  kind: string
   description: "Kafka broker address"
   required: true
