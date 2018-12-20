@@ -11,4 +11,8 @@ spec:
   triggers:
     kafkaTrigger:
       kind: kafka
+      workerAllocatorName: {{ .workerAllocatorName }}
+      consumerGroup: {{ .consumerGroup }}
       initialOffset: {{ .initialOffset }}
+      topics: aaaa
+      brokers: bbb
