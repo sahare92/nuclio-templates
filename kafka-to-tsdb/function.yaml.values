@@ -12,21 +12,29 @@ workerAllocatorName:
   kind: string
   description: "Kafka worker allocator name"
   required: false
+  attributes:
+    defaultValue: a
 
 consumerGroup:
   displayName: Consumer Group
   kind: string
   description: "Kafka consumer group name"
   required: false
+  attributes:
+    defaultValue: a
 
 topic:
   displayName: Topic
   kind: string
   description: "Kafka topic name"
   required: true
+  attributes:
+    defaultValue: a
 
 broker:
   displayName: Broker
   kind: string
   description: "Kafka broker address"
   required: true
+  attributes:
+    defaultValue: a
