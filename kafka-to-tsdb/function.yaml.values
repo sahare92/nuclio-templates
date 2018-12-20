@@ -6,3 +6,27 @@ initialOffset:
   attributes:
     choices: [Earliest, Latest]
     defaultValue: Latest
+
+workerAllocatorName:
+  displayName: Worker allocator name
+  kind: string
+  description: "Kafka worker allocator name"
+  required: false
+
+consumerGroup:
+  displayName: Consumer Group
+  kind: string
+  description: "Kafka consumer group name"
+  required: false
+
+topic:
+  displayName: Topic
+  kind: string
+  description: "Kafka topic name"
+  required: true
+
+broker:
+  displayName: Broker
+  kind: string
+  description: "Kafka broker address"
+  required: true
