@@ -1,3 +1,4 @@
+{{ $topics := []string{"aaa"} }}
 metadata:
   name: kafka-to-tsdb
 spec:
@@ -14,5 +15,5 @@ spec:
       workerAllocatorName: {{ .workerAllocatorName }}
       consumerGroup: {{ .consumerGroup }}
       initialOffset: {{ .initialOffset }}
-      topics: {{ []string{"aaaa"} }}
-      brokers: {{ []string{"bbbb"} }}
+      topics: {{ $topics }}
+      brokers: {{ $topics }}
