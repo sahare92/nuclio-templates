@@ -10,7 +10,7 @@ spec:
   maxReplicas: 1
   triggers:
     kafkaTrigger:
-      kind: Kafka
+      kind: kafka-cluster
       workerAllocatorName: {{ .workerAllocatorName }}
       consumerGroup: {{ .consumerGroup }}
       initialOffset: {{ .initialOffset }}
