@@ -15,5 +15,5 @@ spec:
       workerAllocatorName: {{ .workerAllocatorName }}
       consumerGroup: {{ .consumerGroup }}
       initialOffset: {{ .initialOffset }}
-      topics: {{ $topics }}
-      brokers: {{ $topics }}
+      topics: ABC EFG
+      brokers: DEF HGI
