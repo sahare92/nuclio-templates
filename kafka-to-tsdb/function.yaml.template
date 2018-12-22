@@ -12,7 +12,7 @@ spec:
     kafkaTrigger:
       kind: kafka-cluster
       workerAllocatorName: {{ .workerAllocatorName }}
-      item_consumerGroup: {{ .consumerGroup }}
+      consumerGroup: {{ .consumerGroup }}
       initialOffset: {{ .initialOffset }}
       topics: ABC EFG
       brokers: DEF HGI
