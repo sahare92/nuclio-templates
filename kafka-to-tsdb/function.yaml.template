@@ -1,4 +1,3 @@
-{{ $topics := []string{"aaa"} }}
 metadata:
   name: kafka-to-tsdb
 spec:
