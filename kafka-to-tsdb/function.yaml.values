@@ -23,10 +23,10 @@ topic:
   displayName: Topic
   kind: string
   description: "Kafka topic name"
-  required: false
+  required: true
 
 broker:
   displayName: Broker
   kind: string
   description: "Kafka broker address"
-  required: false
+  required: true
