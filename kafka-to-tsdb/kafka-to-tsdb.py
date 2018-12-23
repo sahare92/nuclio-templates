@@ -22,4 +22,4 @@ def handler(context, event):
     event_body=json.loads(event.body)
 
     # ingest the parsed event to tsdb
-    context.platform.call_function('default-tenant-tsdb-nuclio-ingest', nuclio_sdk.Event(bodym=event_body))
+    context.platform.call_function('default-tenant-tsdb-nuclio-ingest', nuclio_sdk.Event(body=event_body))
