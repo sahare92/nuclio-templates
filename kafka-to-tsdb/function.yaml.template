@@ -12,8 +12,8 @@ spec:
     kafkaTrigger:
       kind: kafka-cluster
       workerAllocatorName: {{ .workerAllocatorName }}
-      consumerGroup: {{ .consumerGroup }}
-      initialOffset: {{ .initialOffset }}
-      topics: ABC EFG
-      brokers: DEF HGI
-      maxWorkers: {{ .maxWorkers }}
+      attributes:
+        consumerGroup: {{ .consumerGroup }}
+        initialOffset: {{ .initialOffset }}
+        topics: ABC EFG
+        brokers: DEF HGI
