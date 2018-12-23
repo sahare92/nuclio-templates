@@ -16,3 +16,4 @@ spec:
       initialOffset: {{ .initialOffset }}
       topics: ABC EFG
       brokers: DEF HGI
+      maxWorkers: {{ .maxWorkers }}

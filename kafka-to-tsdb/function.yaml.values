@@ -30,3 +30,13 @@ broker:
   kind: string
   description: "Kafka broker address"
   required: false
+
+maxWorkers:
+  displayName: Number of workers
+  kind: number
+  description: "Number of requests to handle concurrently"
+  required: true
+  attributes:
+    defaultValue: 4
+    minValue: 1
+    maxValue: 10
