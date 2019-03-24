@@ -97,12 +97,12 @@ SqlQueryCreatedDtCol:
   order: 12
   displayName: MySQL Created Datetime column
   kind: string
-  description: "E.G - CreatedDate"
+  description: "E.G - CreatedDate on the basis of which new records will be fetched"
   required: true
 
 SqlQueryModifiedDtCol:
   order: 13
   displayName: MySQL Modified Datetime column
   kind: string
-  description: "E.G - ModifiedDate"
+  description: "E.G - ModifiedDate on the basis of which modified records will be fetched"
   required: true

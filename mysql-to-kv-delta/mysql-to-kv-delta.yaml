@@ -1,5 +1,5 @@
 metadata:
-  name: test-mysql-delta-ingest
+  name: mysql-to-kv-delta
   labels:
     nuclio.io/project-name: e336fb52-2d6f-49a9-9cff-fa93fb85f8ae
 spec:
