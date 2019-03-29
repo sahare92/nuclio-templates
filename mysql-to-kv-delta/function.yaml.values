@@ -14,7 +14,7 @@
 
 Container:
   order: 1
-  displayName: Container name
+  displayName: Iguazio Data container name
   kind: string
   required: true
   attributes:
@@ -22,7 +22,7 @@ Container:
 
 Table:
   order: 2
-  displayName: Table name
+  displayName: Iguazio table name
   kind: string
   description: "Name of Iguazio's table destination"
   required: true
@@ -31,7 +31,7 @@ Table:
 
 IgzV3f:
   order: 3
-  displayName: v3io-frames endpoint
+  displayName: V3IO frames endpoint
   kind: string
   description: "v3io-frames endpoint including port ID"
   required: true
@@ -40,7 +40,7 @@ IgzV3f:
 
 IgzPwd:
   order: 4
-  displayName: Iguazio's system password
+  displayName: Iguazio user password
   kind: string
   required: true
   attributes:
@@ -48,15 +48,17 @@ IgzPwd:
 
 SqlHost:
   order: 5
-  displayName: MySQL DB hostname
+  displayName: MySQL Hostname
   kind: string
   required: true
 
 SqlPort:
   order: 6
-  displayName: MySQL DB port ID
+  displayName: MySQL port ID
   kind: number
   required: true
+  attributes:
+    defaultValue: 3306
 
 SqlDBName:
   order: 7
@@ -67,42 +69,40 @@ SqlDBName:
 
 SqlUser:
   order: 8
-  displayName: MySQL DB username
+  displayName: MySQL username
   kind: string
   required: true
 
 SqlPwd:
   order: 9
-  displayName: MySQL DB password
+  displayName: MySQL password
   kind: string
   required: false
-  attributes:
-    password: true
 
 SqlQuery:
   order: 10
-  displayName: MySQL query string
+  displayName: MySQL query
   kind: string
   description: "E.G - SELECT * FROM table LIMIT 10"
   required: true
 
 SqlQueryDeltaInterval:
   order: 11
-  displayName: MySQL delta interval(in sec)
+  displayName: MySQL delta interval(in minutes)
   kind: string
-  description: "to query the table and fetch updates/inserts every x seconds. It should be same as cron interval"
+  description: "to query the table and fetch updates/inserts every x minutes. It should be same as cron interval"
   required: true
 
 SqlQueryCreatedDtCol:
   order: 12
-  displayName: MySQL Created Datetime column
+  displayName: MySQL create time column
   kind: string
   description: "E.G - CreatedDate on the basis of which new records will be fetched"
   required: true
 
 SqlQueryModifiedDtCol:
   order: 13
-  displayName: MySQL Modified Datetime column
+  displayName: MySQL modified column
   kind: string
   description: "E.G - ModifiedDate on the basis of which modified records will be fetched"
   required: true

@@ -14,7 +14,8 @@
 # limitations under the License.
 
 spec:
-  description: "A simple v3io-frames usage for PutItem using MySQL DB"
+  description: "This function imports data from MySQL database into Iguazio NoSQL table on an ongoing basis.
+  It requires having create time and modified time columns in order to fetch the delta in each iteratio"
   handler: "main:handler"
   env:
     - name: CONTAINER
@@ -38,7 +39,7 @@ spec:
     - name: SQL_QUERY
       value: {{ .SqlQuery }}
     - name: DELTA_INTERVAL_SEC
-      value: {{ .SqlQueryDeltaInterval }}
+      value: {{ .SqlQueryDeltaInterval }}s
     - name: CREATED_DATETIME_COL
       value: {{ .SqlQueryCreatedDtCol }}
     - name: MODIFIED_DATETIME_COL
