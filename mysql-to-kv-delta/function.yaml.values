@@ -97,14 +97,14 @@ SqlQueryDeltaInterval:
 
 SqlQueryCreatedDtCol:
   order: 12
-  displayName: MySQL create time column
+  displayName: MySQL create time column (date)
   kind: string
   description: "E.G - CreatedDate on the basis of which new records will be fetched"
   required: true
 
 SqlQueryModifiedDtCol:
   order: 13
-  displayName: MySQL modified column
+  displayName: MySQL modified column (date)
   kind: string
   description: "E.G - ModifiedDate on the basis of which modified records will be fetched"
   required: true
