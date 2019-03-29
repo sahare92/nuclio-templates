@@ -54,7 +54,7 @@ SqlHost:
 
 SqlPort:
   order: 6
-  displayName: MySQL port ID
+  displayName: MySQL Port ID
   kind: number
   required: true
   attributes:
@@ -69,15 +69,17 @@ SqlDBName:
 
 SqlUser:
   order: 8
-  displayName: MySQL username
+  displayName: MySQL Username
   kind: string
   required: true
 
 SqlPwd:
   order: 9
-  displayName: MySQL password
+  displayName: MySQL Password
   kind: string
   required: false
+  attributes:
+    password: true
 
 SqlQuery:
   order: 10
