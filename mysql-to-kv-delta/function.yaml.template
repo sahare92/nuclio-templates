@@ -37,8 +37,8 @@ spec:
       value: {{ .SqlDBName }}
     - name: SQL_QUERY
       value: {{ .SqlQuery }}
-    - name: DELTA_INTERVAL_SEC
-      value: {{ .SqlQueryDeltaInterval }}s
+    - name: DELTA_INTERVAL_MINUTE
+      value: {{ .SqlQueryDeltaInterval }}
     - name: CREATED_DATETIME_COL
       value: {{ .SqlQueryCreatedDtCol }}
     - name: MODIFIED_DATETIME_COL
