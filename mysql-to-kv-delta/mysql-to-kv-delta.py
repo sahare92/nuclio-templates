@@ -47,7 +47,7 @@ def init_context(context):
     database = os.getenv('SQL_DB_NAME')
 
     # Init v3io-frames connection and set it as a context attribute
-    client = v3f.Client(address=os.getenv('IGZ_V3F'), password=os.getenv('IGZ_PWD'), container=os.getenv('CONTAINER'))
+    client = v3f.Client(address=os.getenv('IGZ_V3F'), username=os.getenv('IGZ_USER'),password=os.getenv('IGZ_PWD'), container=os.getenv('CONTAINER'))
     setattr(context, 'client', client)
     
     connection_string = f"mysql://{user}:{password}@{host}:{port}/{database}"

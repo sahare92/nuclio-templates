@@ -38,20 +38,28 @@ IgzV3f:
     defaultValue: v3io-framesd:8081
     order: 3
 
+IgzUser:
+  displayName: Iguazio user name
+  kind: string
+  required: true
+  attributes:
+    defaultValue: iguazio
+    order: 4
+
 IgzPwd:
   displayName: Iguazio user password
   kind: string
   required: true
   attributes:
     password: true
-    order: 4
+    order: 5
 
 SqlHost:
   displayName: MySQL Hostname
   kind: string
   required: true
   attributes:
-    order: 5
+    order: 6
 
 SqlPort:
   displayName: MySQL Port ID
@@ -59,7 +67,7 @@ SqlPort:
   required: true
   attributes:
     defaultValue: 3306
-    order: 6
+    order: 7
 
 SqlDBName:
   displayName: MySQL DB name
@@ -67,14 +75,14 @@ SqlDBName:
   description: "Name of the MySQL database"
   required: true
   attributes:
-    order: 7
+    order: 8
 
 SqlUser:
   displayName: MySQL Username
   kind: string
   required: true
   attributes:
-    order: 8
+    order: 9
 
 SqlPwd:
   displayName: MySQL Password
@@ -82,7 +90,7 @@ SqlPwd:
   required: false
   attributes:
     password: true
-    order: 9
+    order: 10
 
 SqlQuery:
   displayName: MySQL query
@@ -90,7 +98,7 @@ SqlQuery:
   description: "E.G - SELECT * FROM table LIMIT 10"
   required: true
   attributes:
-    order: 10
+    order: 11
 
 SqlQueryDeltaInterval:
   displayName: MySQL delta interval(in minutes)
@@ -98,7 +106,7 @@ SqlQueryDeltaInterval:
   description: "to query the table and fetch updates/inserts every x minutes. It should be same as cron interval"
   required: true
   attributes:
-    order: 11
+    order: 12
 
 SqlQueryCreatedDtCol:
   displayName: MySQL create time column (date)
@@ -106,7 +114,7 @@ SqlQueryCreatedDtCol:
   description: "E.G - CreatedDate on the basis of which new records will be fetched"
   required: true
   attributes:
-    order: 12
+    order: 13
 
 SqlQueryModifiedDtCol:
   displayName: MySQL modified column (date)
@@ -114,4 +122,4 @@ SqlQueryModifiedDtCol:
   description: "E.G - ModifiedDate on the basis of which modified records will be fetched"
   required: true
   attributes:
-    order: 13
+    order: 14
