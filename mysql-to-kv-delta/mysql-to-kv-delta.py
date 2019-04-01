@@ -26,10 +26,10 @@ import v3io_frames as v3f
 
 
 def handler(context, event):
-    delta_interval_sec = os.getenv('DELTA_INTERVAL_SEC')
+    delta_interval_minute = os.getenv('DELTA_INTERVAL_MINUTE')
     modified_col = os.getenv('MODIFIED_DATETIME_COL')
     created_col = os.getenv('CREATED_DATETIME_COL')
-    datetime_query = str(datetime.datetime.now() - datetime.timedelta(seconds=int(delta_interval_sec)))
+    datetime_query = str(datetime.datetime.now() - datetime.timedelta(seconds=int(delta_interval_minute)*60))
     sql_query = os.getenv('SQL_QUERY')
     sql_query_diff = sql_query + " where ("+created_col+">='"+str(datetime_query)+"' AND "+modified_col+" IS NULL) OR ("+modified_col+">='"+str(datetime_query)+"')"
     context.logger.debug(sql_query_diff)
