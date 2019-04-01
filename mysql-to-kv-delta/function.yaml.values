@@ -51,7 +51,7 @@ SqlHost:
   kind: string
   required: true
   attributes:
-    order: 4
+    order: 5
 
 SqlPort:
   displayName: MySQL Port ID
