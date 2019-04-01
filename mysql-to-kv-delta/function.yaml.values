@@ -13,98 +13,105 @@
 # limitations under the License.
 
 Container:
-  order: 1
   displayName: Iguazio Data container name
   kind: string
   required: true
   attributes:
     defaultValue: bigdata
+    order: 1
 
 Table:
-  order: 2
   displayName: Iguazio table name
   kind: string
   description: "Name of Iguazio's table destination"
   required: true
   attributes:
     defaultValue: table
+    order: 2
 
 IgzV3f:
-  order: 3
   displayName: V3IO frames endpoint
   kind: string
   description: "v3io-frames endpoint including port ID"
   required: true
   attributes:
     defaultValue: v3io-framesd:8081
+    order: 3
 
 IgzPwd:
-  order: 4
   displayName: Iguazio user password
   kind: string
   required: true
   attributes:
     password: true
+    order: 4
 
 SqlHost:
-  order: 5
   displayName: MySQL Hostname
   kind: string
   required: true
+  attributes:
+    order: 4
 
 SqlPort:
-  order: 6
   displayName: MySQL Port ID
   kind: number
   required: true
   attributes:
     defaultValue: 3306
+    order: 6
 
 SqlDBName:
-  order: 7
   displayName: MySQL DB name
   kind: string
   description: "Name of the MySQL database"
   required: true
+  attributes:
+    order: 7
 
 SqlUser:
-  order: 8
   displayName: MySQL Username
   kind: string
   required: true
+  attributes:
+    order: 8
 
 SqlPwd:
-  order: 9
   displayName: MySQL Password
   kind: string
   required: false
   attributes:
     password: true
+    order: 9
 
 SqlQuery:
-  order: 10
   displayName: MySQL query
   kind: string
   description: "E.G - SELECT * FROM table LIMIT 10"
   required: true
+  attributes:
+    order: 10
 
 SqlQueryDeltaInterval:
-  order: 11
   displayName: MySQL delta interval(in minutes)
   kind: string
   description: "to query the table and fetch updates/inserts every x minutes. It should be same as cron interval"
   required: true
+  attributes:
+    order: 11
 
 SqlQueryCreatedDtCol:
-  order: 12
   displayName: MySQL create time column (date)
   kind: string
   description: "E.G - CreatedDate on the basis of which new records will be fetched"
   required: true
+  attributes:
+    order: 12
 
 SqlQueryModifiedDtCol:
-  order: 13
   displayName: MySQL modified column (date)
   kind: string
   description: "E.G - ModifiedDate on the basis of which modified records will be fetched"
   required: true
+  attributes:
+    order: 13
