@@ -65,5 +65,3 @@ SqlPort:
   kind: number
   required: true
   order: 7
-  attributes:
-    defaultValue: 3306
