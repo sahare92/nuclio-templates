@@ -19,3 +19,43 @@ Container:
   order: 1
   attributes:
     defaultValue: bigdata
+
+Table:
+  displayName: Iguazio table name
+  kind: string
+  description: "Name of Iguazio's table destination"
+  required: true
+  order: 2
+  attributes:
+    defaultValue: table
+
+IgzV3f:
+  displayName: V3IO frames endpoint
+  kind: string
+  description: "v3io-frames endpoint including port ID"
+  required: true
+  order: 3
+  attributes:
+    defaultValue: v3io-framesd:8081
+
+IgzUser:
+  displayName: Iguazio user name
+  kind: string
+  required: true
+  order: 4
+  attributes:
+    defaultValue: iguazio
+
+IgzPwd:
+  displayName: Iguazio user password
+  kind: string
+  required: true
+  order: 5
+  attributes:
+    password: true
+
+SqlHost:
+  displayName: MySQL Hostname
+  kind: string
+  required: true
+  order: 6

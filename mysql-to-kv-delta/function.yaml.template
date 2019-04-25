@@ -19,6 +19,16 @@ spec:
   env:
     - name: CONTAINER
       value: {{ .Container }}
+    - name: TABLE
+      value: {{ .Table }}
+    - name: IGZ_V3F
+      value: {{ .IgzV3f }}
+    - name: IGZ_USER
+      value: {{ .IgzUser }}
+    - name: IGZ_PWD
+      value: {{ .IgzPwd }}
+    - name: SQL_HOST
+      value: {{ .SqlHost }}
 
   runtime: "python:3.6"
   minReplicas: 1
