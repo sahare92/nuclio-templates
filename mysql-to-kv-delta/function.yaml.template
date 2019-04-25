@@ -29,6 +29,8 @@ spec:
       value: {{ .IgzPwd }}
     - name: SQL_HOST
       value: {{ .SqlHost }}
+    - name: SQL_PORT
+      value: {{ .SqlPort }}
 
   runtime: "python:3.6"
   minReplicas: 1

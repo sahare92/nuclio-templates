@@ -59,3 +59,11 @@ SqlHost:
   kind: string
   required: true
   order: 6
+
+SqlPort:
+  displayName: MySQL Port ID
+  kind: number
+  required: true
+  order: 7
+  attributes:
+    defaultValue: 3306
