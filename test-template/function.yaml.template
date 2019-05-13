@@ -1,0 +1,13 @@
+metadata:
+  name: test-template
+spec:
+  build:
+    functionSourceCode: {{ .SourceCode }}
+  description: "Returns the returned number"
+  env:
+    - name: RETURNED_NUMBER
+      value: {{ .ReturnedNumber }}
+  handler: "main:handler"
+  runtime: "python:3.6"
+  minReplicas: 1
+  maxReplicas: 1
