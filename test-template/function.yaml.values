@@ -1,7 +1,7 @@
-ReturnedNumber:
-  displayName: Number to return
-  kind: number
-  description: "The number the function should return"
+ReturnedText:
+  displayName: Text to return
+  kind: string
+  description: "The text the function should return"
   required: true
   attributes:
-    defaultValue: 99
+    defaultValue: "test"

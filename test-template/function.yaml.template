@@ -5,8 +5,8 @@ spec:
     functionSourceCode: {{ .SourceCode }}
   description: "Returns the returned number"
   env:
-    - name: RETURNED_NUMBER
-      value: {{ .ReturnedNumber }}
+    - name: RETURNED_TEXT
+      value: {{ .ReturnedText }}
   handler: "main:handler"
   runtime: "python:3.6"
   minReplicas: 1

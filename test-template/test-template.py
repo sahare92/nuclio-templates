@@ -1,2 +1,4 @@
+import os
+
 def handler(context, event):
-    return 'test-response'
+    return os.environ['RETURNED_TEXT']
